@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.home {
+    background-image:url('/static/images/background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.container1{
+    
+    display: flex;
+}
+
+.my-info {
+    color: #36454F;
+    width: 60%;
+}
+
+.iam span {
+    color: blue;
+    white-space: nowrap;
+}
+
+.iam {
+    font-size: 42px;
+    padding: 20px;
+    text-align: center;
+    font-family: "sans-serif",Open Sans;
+    
+    
+}
+
+.description {
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.my-image {
+    width: 40%;
+    text-align:center;
+}
+
+.my-image img {
+    height: 430px;
+}
+
+.contact-me{
+    text-align: center;
+}
+.social-media{
+    text-align: center;
+    display: inline-flex;
+}
+.social-media li{
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+    
+}
+.social-media a{
+    text-decoration: none;
+    color: blue;
+}
+.cv{
+    text-align: center;
+}
+.btn-cv{
+    background-color: #00aaff;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    transition: background-color 0.3s;
+    font-size: 15px;
+}
+.btn-cv:hover{
+    background-color: #0088cc;
+}
+/* Styles for Medium Screens (Tablet) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack the content vertically on smaller screens */
+    }
+
+    .my-info {
+        width: 100%; /* Full width for content on smaller screens */
+    }
+
+    .my-image {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Styles for Small Screens (Mobile) */
+@media (max-width: 480px) {
+    .iam {
+        font-size: 32px; /* Reduce font size for smaller screens */
+    }
+
+    .description {
+        font-size: 16px; /* Reduce font size for smaller screens */
+    }
+}
+.icon{
+    height: 40px;
+}

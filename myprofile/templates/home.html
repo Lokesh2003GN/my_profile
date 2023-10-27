@@ -1,0 +1,35 @@
+{% extends 'layouts/main.html' %}
+{% block title %}
+home
+{% endblock title %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=sans-serif">
+<div class="home">
+    <div class="container1">
+        <div class="my-image animated">        
+            <img src="{% static 'images/lokesh.png' %}" alt="">
+        </div>
+        <div class="my-info animated">
+            <p class="iam">Unlocking the Digital World: <span> G N Lokesh's</span> Journey in Tech
+            </p>
+            <p class="description">
+                Welcome to my digital space! I'm G N Lokesh, a passionate B-Tech CSE student at VIT-AP University in India. Explore my projects, skills, and experiences in the realm of computer science and engineering as I navigate through the fascinating world of technology.
+            </p>
+            <div class="contact-me">
+            <ul class="social-media">
+                <a href="https://github.com/Lokesh2003GN"><li><img src="{% static 'images/GitHub-icon.png' %}" class="icon" alt=""></li></a>
+                <a href="https://www.linkedin.com/mwlite/profile/in/lokeshGN"><li><img class="icon" src="{% static 'images/LinkedIn-icon.png' %}" alt=""></li></a>
+                <a href="https://twitter.com/lokeshGN6122003"><li><img src="{% static 'images/twitter-icon.png' %}" class="icon" alt=""></li></a>
+                <a href="mailto:gopalalokesh2003@gmail.com"><li><img src="{% static 'images/gmail-icon.png' %}" class="icon" alt=""></li></a>
+            </ul></div>
+            <div class="cv">
+            <button class="btn-cv">Download CV</button></div>
+        </div>
+        
+    </div>
+</div>
+
+{% endblock content %}
